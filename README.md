@@ -11,4 +11,9 @@
 ## II/Cấu hình ứng dụng
 * *SDK* : 30 API
 * **Dịch vụ sử dụng** :Firebase ML Kit
+* **Thư viện**: 
+- implementation 'com.google.android.gms:play-services-mlkit-text-recognition:16.0.0'
 ## III/DEMO APP
+<img src="github_image/home.png">
+<img src="github_image/page_voice.png">
+<img src="github_image/upload_image.png">
