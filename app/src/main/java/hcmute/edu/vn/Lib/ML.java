@@ -11,6 +11,7 @@ import com.google.mlkit.vision.common.InputImage;
 import com.google.mlkit.vision.text.Text;
 import com.google.mlkit.vision.text.TextRecognition;
 import com.google.mlkit.vision.text.TextRecognizer;
+import com.google.mlkit.vision.text.latin.TextRecognizerOptions;
 
 import java.io.IOException;
 
@@ -30,7 +31,8 @@ public class ML {
             return;
         }
 
-        TextRecognizer recognizer = TextRecognition.getClient();
+        // Create an instance of TextRecognizer with default options
+        TextRecognizer recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS);
         recognizer.process(image)
                 .addOnSuccessListener(new OnSuccessListener<Text>() {
                     @Override

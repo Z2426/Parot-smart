@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +14,10 @@
         android:textColor="@color/purple_200"
         android:textStyle="bold"
         android:padding="4dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:contentDescription="VietNames"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,47 +28,49 @@
         android:layout_marginTop="20dp">
 
         <Spinner
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:id="@+id/idFromSpinner"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
             android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
             android:padding="3dp"
-            android:gravity="center"/>
+            android:contentDescription="English"
+            />
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/ic_right_arraow"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            />
 
         <Spinner
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_weight="1"
             android:id="@+id/idToSpinner"
             android:layout_margin="3dp"
             android:padding="3dp"
-            android:gravity="center"/>
-
+            android:gravity="center"
+            android:contentDescription="VietNamese"/>
     </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Enter Text"
+        android:layout_marginEnd="20dp"
+        android:hint="Text after speaking"
         android:padding="5dp"
-        android:textColorHint="@color/purple_200"
-        app:hintTextColor="@color/purple_200">
+        android:textColorHint="@color/purple_200">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/idEdtSource"
-            android:layout_width="match_parent"
+            android:layout_width="365dp"
             android:layout_height="match_parent"
             android:ems="10"
             android:importantForAutofill="no"
@@ -76,6 +78,22 @@
             android:textColor="@color/black"
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
+    <ImageView
+        android:id="@+id/idIVsound1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_sound" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_mic"
+        android:id="@+id/idIVmic"
+        app:tint="@color/teal_200" />
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
@@ -84,11 +102,9 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
         android:text="Translate"
-        android:textAllCaps="false"
         android:id="@+id/idBtnTranslate"
-        android:textColor="#ffffff"
-        android:background="@drawable/button"/>
-
+        android:background="@drawable/button"
+        />
     <TextView
         android:id="@+id/idTVTranslatedTV"
         android:layout_width="match_parent"
@@ -101,39 +117,13 @@
         android:textColor="@color/black"
         android:height="50dp"
         android:textSize="18sp"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:weightSum="2"
-        android:layout_marginEnd="2dp"
-        android:layout_marginTop="60dp">
-
-        <Button
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:text="document"
-            android:textColor="#ffff"
-            android:id="@+id/document"
-            app:icon="@drawable/icons8_document"
-            android:background="@drawable/button"/>
-
-        <Button
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:text="image"
-            android:background="@drawable/button"
-            android:textColor="#ffff"
-            app:icon="@drawable/icons8_binoculars"
-            />
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/idIVsound2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_sound" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -144,30 +134,17 @@
         android:layout_marginEnd="2dp"
         >
         <Button
-            android:layout_width="160dp"
+            android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:text="upload"
+            android:layout_marginTop="30dp"
+            android:text="Detect "
             android:textColor="#ffff"
+            android:id="@+id/bt_upload"
             android:background="@drawable/button"
-            android:id="@+id/btn_upload"
-            android:onClick="gotoUploadLayout"
             app:icon="@drawable/icons8_upload_to_the_cloud"
             />
 
-        <Button
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:text="voice"
-            android:textColor="#ffff"
-            android:id="@+id/btn_voice"
-            android:background="@drawable/button"
-            android:onClick="gotoMainAvtivity"
-            app:icon="@drawable/ic_mic"
-            />
     </LinearLayout>
 
 </LinearLayout>

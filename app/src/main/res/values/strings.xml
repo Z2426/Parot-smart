@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PAROT SMART</string>
+    <string-array name="language_options">
+        <item>vi</item>
+        <item>en</item>
+    </string-array>
 </resources>
