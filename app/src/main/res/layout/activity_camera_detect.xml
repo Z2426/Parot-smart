@@ -33,24 +33,25 @@
                 android:textSize="18sp"
                 android:padding="16dp"
                 android:text="Sample Text"
+                android:textColor="@color/purple_200"
                 android:maxLines="100"
                 android:scrollbars="vertical"
-                android:fadeScrollbars="false" />
+                android:fadeScrollbars="false"
+               />
         </ScrollView>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
-
-
             <Button
                 android:id="@+id/backButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Back" />
+                android:text="Back"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button"/>
         </LinearLayout>
 
     </LinearLayout>
