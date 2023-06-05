@@ -12,10 +12,10 @@
 * *SDK* : 30 API
 * **Dịch vụ sử dụng** :Firebase ML Kit
 * **Thư viện**: 
--implementation 'com.google.mlkit:translate:17.0.1'
--implementation 'com.google.android.gms:play-services-mlkit-text-recognition:17.0.1'
--implementation 'androidx.camera:camera-core:1.1.0-alpha11'
--implementation 'androidx.camera:camera-camera2:1.1.0-alpha11'
+- implementation 'com.google.mlkit:translate:17.0.1'
+- implementation 'com.google.android.gms:play-services-mlkit-text-recognition:17.0.1'
+- implementation 'androidx.camera:camera-core:1.1.0-alpha11'
+- implementation 'androidx.camera:camera-camera2:1.1.0-alpha11'
 ## III/DEMO APP
 <img src="github_image/home.png">
 <img src="github_image/page_voice.png">
