@@ -10,7 +10,7 @@
 * **Dịch ảnh**: Cho phép người dùng dịch văn bản trong ảnh từ ngôn ngữ gốc sang ngôn ngữ đích. Người dùng có thể chụp ảnh hoặc tải lên ảnh của mình lên ứng dụng để dịch.
 ## II/Cấu hình ứng dụng
 * *SDK* : 30 API
-* **Dịch vụ sử dụng** :Firebase ML Kit
+* **Dịch vụ sử dụng** :Firebase ML Kit , Google ML Kit
 * **Thư viện**: 
 - implementation 'com.google.mlkit:translate:17.0.1'
 - implementation 'com.google.android.gms:play-services-mlkit-text-recognition:17.0.1'
